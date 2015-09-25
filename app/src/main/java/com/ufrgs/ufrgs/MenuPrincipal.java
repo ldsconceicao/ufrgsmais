@@ -4,6 +4,7 @@ import com.ufrgs.ufrgs.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,9 +19,17 @@ import android.view.View;
  */
 public class MenuPrincipal extends Activity {
     /**
-     * Whether or not the system UI should be auto-hidden after
-     * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
+     * Muda para a atividade Mapa
      */
+    public void toMapa (View view) {
+        Intent intent = new Intent(this, Mapa.class);
+        startActivity(intent);
+    }
+
+    /**
+    * Whether or not the system UI should be auto-hidden after
+    * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
+    */
     private static final boolean AUTO_HIDE = true;
 
     /**
