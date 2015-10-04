@@ -18,18 +18,21 @@ import android.view.View;
  * @see SystemUiHider
  */
 public class MenuPrincipal extends Activity {
-    /**
-     * Muda para a atividade Mapa
-     */
-    public void toMapa (View view) {
+    private String urlJson = "http://www1.ufrgs.br/infraestrutura/geolocation/index.php/mapa/identificarPredio/id/" + "37"; //"https://api.twitter.com/1/trends/23424768.json";
+    // { context: this, dataType: 'json' } )
+
+            /**
+             * Muda para a atividade Mapa
+             */
+    public void toMapa(View view) {
         Intent intent = new Intent(this, Mapa.class);
         startActivity(intent);
     }
 
     /**
-    * Whether or not the system UI should be auto-hidden after
-    * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
-    */
+     * Whether or not the system UI should be auto-hidden after
+     * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
+     */
     private static final boolean AUTO_HIDE = true;
 
     /**
@@ -121,6 +124,9 @@ public class MenuPrincipal extends Activity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+
+        new DownloadJsonAsyncTask()
+                .execute(urlJson);
     }
 
     @Override
@@ -165,4 +171,5 @@ public class MenuPrincipal extends Activity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
 }
