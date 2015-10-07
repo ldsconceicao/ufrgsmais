@@ -1,7 +1,8 @@
 .gradle
 /local.properties
-/.idea
+/.idea/
 UFRGS+.iml
+app.iml
 .DS_Store
 /build
 /captures
