@@ -125,8 +125,8 @@ public class MenuPrincipal extends Activity {
         // while interacting with the UI.
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
-        new DownloadJsonAsyncTask()
-                .execute(urlJson);
+        //new DownloadJsonAsyncTask()
+        //        .execute(urlJson);
     }
 
     @Override
