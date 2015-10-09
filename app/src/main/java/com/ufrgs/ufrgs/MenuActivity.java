@@ -63,6 +63,7 @@ public class MenuActivity extends AppCompatActivity
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+                toMapa(null);
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);

@@ -1,21 +1,36 @@
 package com.ufrgs.ufrgs;
 
+import android.graphics.Point;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.maps.android.geojson.GeoJsonLayer;
+
+import org.json.JSONObject;
 
 public class Mapa extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    private RequestQueue queue;
+    private JsonObjectRequest requestPredios;
+    private GeoJsonLayer layer;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
+        queue = Volley.newRequestQueue(this);
         setUpMapIfNeeded();
     }
 
@@ -41,6 +56,23 @@ public class Mapa extends FragmentActivity {
      * method in {@link #onResume()} to guarantee that it will be called.
      */
     private void setUpMapIfNeeded() {
+        requestPredios = new JsonObjectRequest(Request.Method.GET, "http://www1.ufrgs.br/infraestrutura/geolocation/index.php/mapa/predio", null,
+                new Response.Listener<JSONObject>(){
+            @Override
+            public void onResponse(JSONObject response){
+
+                layer = new GeoJsonLayer(mMap, response);
+
+                layer.addLayerToMap();
+            }
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
             // Try to obtain the map from the SupportMapFragment.
@@ -60,6 +92,8 @@ public class Mapa extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        queue.add(requestPredios);
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-30.0373848, -51.2059744), 12.0f));
     }
 }
