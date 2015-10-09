@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">UFRGS+</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_mapa">Map</string>
+    <string name="dummy_button">Botão Teste</string>
+    <string name="dummy_content">Teste\nConteúdo</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_menu">UFRGS+</string>
+
+    <string name="title_section1">Inicio</string>
+    <string name="title_section2">Mapa</string>
+    <string name="title_section3">Calendário Academico</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_join">Cadastrar-se</string>
+
+    <string name="action_about">Sobre</string>
 </resources>

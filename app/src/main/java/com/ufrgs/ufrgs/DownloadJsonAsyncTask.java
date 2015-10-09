@@ -30,7 +30,23 @@ public class DownloadJsonAsyncTask extends AsyncTask<String, Void, List<String>>
                 HttpResponse response = httpclient.execute(httpget);
 
                 HttpEntity entity = response.getEntity();
-
+/*
+StatusLine statusLine = response.getStatusLine();
+      int statusCode = statusLine.getStatusCode();
+      if (statusCode == 200) {
+        HttpEntity entity = response.getEntity();
+        InputStream content = entity.getContent();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+        String line;
+        while ((line = reader.readLine()) != null) {
+          builder.append(line);
+        }
+      } else {
+        Log.e(ParseJSON.class.toString(), "Failed to download file");
+      }
+    } catch (ClientProtocolException e) {
+      e.printStackTrace();
+ */
                 if (entity != null) {
                     InputStream instream = entity.getContent();
 
