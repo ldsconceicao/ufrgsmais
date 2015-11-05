@@ -1,5 +1,6 @@
 package com.ufrgs.ufrgs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -28,6 +29,7 @@ import android.widget.Toast;
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
 public class NavigationDrawerFragment extends Fragment {
+    private MenuPrincipal context;
 
     /**
      * Remember the position of the selected item.
@@ -199,6 +201,8 @@ public class NavigationDrawerFragment extends Fragment {
         if (mCallbacks != null) {
             mCallbacks.onNavigationDrawerItemSelected(position);
         }
+        //Intent intent = new Intent(this, Mapa.class);
+        //startActivity(intent);
     }
 
     @Override
