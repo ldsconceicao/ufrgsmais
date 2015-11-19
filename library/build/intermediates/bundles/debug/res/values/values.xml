@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/naajunior/Dropbox/UFRGS/2015-2/Laboratório%20de%20Sistema%20de%20Software/UFRGS+/library/res/values/ids.xml -->
+    <!-- From: file:/C:/Users/Ark/Documents/UFRGS+/library/res/values/ids.xml -->
     <eat-comment/>
     <item name="text" type="id"/>
-    <!-- From: file:/home/naajunior/Dropbox/UFRGS/2015-2/Laboratório%20de%20Sistema%20de%20Software/UFRGS+/library/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ark/Documents/UFRGS+/library/res/values/styles.xml -->
     <eat-comment/>
     <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
         <item name="android:textSize">14sp</item>

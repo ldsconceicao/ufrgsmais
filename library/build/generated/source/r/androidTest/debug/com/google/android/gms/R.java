@@ -8,6 +8,7 @@ package com.google.android.gms;
 
 public final class R {
 	public static final class attr {
+		public static final int ambientEnabled = 0x7f010013;
 		public static final int cameraBearing = 0x7f010004;
 		public static final int cameraTargetLat = 0x7f010005;
 		public static final int cameraTargetLng = 0x7f010006;
@@ -85,8 +86,8 @@ public final class R {
 	public static final class raw {
 	}
 	public static final class string {
-		public static final int auth_google_play_services_client_facebook_display_name = 0x7f050020;
-		public static final int auth_google_play_services_client_google_display_name = 0x7f050021;
+		public static final int auth_google_play_services_client_facebook_display_name = 0x7f05001e;
+		public static final int auth_google_play_services_client_google_display_name = 0x7f05001f;
 		public static final int common_android_wear_notification_needs_update_text = 0x7f050000;
 		public static final int common_android_wear_update_text = 0x7f050001;
 		public static final int common_android_wear_update_title = 0x7f050002;
@@ -117,8 +118,8 @@ public final class R {
 		public static final int common_google_play_services_updating_text = 0x7f05001b;
 		public static final int common_google_play_services_updating_title = 0x7f05001c;
 		public static final int common_open_on_phone = 0x7f05001d;
-		public static final int common_signin_button_text = 0x7f05001e;
-		public static final int common_signin_button_text_long = 0x7f05001f;
+		public static final int common_signin_button_text = 0x7f050020;
+		public static final int common_signin_button_text_long = 0x7f050021;
 	}
 	public static final class style {
 	}
@@ -127,7 +128,8 @@ public final class R {
 		public static final int LoadingImageView_circleCrop = 2;
 		public static final int LoadingImageView_imageAspectRatio = 1;
 		public static final int LoadingImageView_imageAspectRatioAdjust = 0;
-		public static final int[] MapAttrs = { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012 };
+		public static final int[] MapAttrs = { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013 };
+		public static final int MapAttrs_ambientEnabled = 16;
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;

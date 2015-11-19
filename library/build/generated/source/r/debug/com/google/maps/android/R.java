@@ -9,6 +9,14 @@ package com.google.maps.android;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int ambientEnabled=0x7f010013;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -257,8 +265,8 @@ containing a value of this type.
         public static int visibility_ground_overlay=0x7f040011;
     }
     public static final class string {
-        public static int auth_google_play_services_client_facebook_display_name=0x7f050020;
-        public static int auth_google_play_services_client_google_display_name=0x7f050021;
+        public static int auth_google_play_services_client_facebook_display_name=0x7f05001e;
+        public static int auth_google_play_services_client_google_display_name=0x7f05001f;
         public static int common_android_wear_notification_needs_update_text=0x7f050000;
         public static int common_android_wear_update_text=0x7f050001;
         public static int common_android_wear_update_title=0x7f050002;
@@ -289,8 +297,8 @@ containing a value of this type.
         public static int common_google_play_services_updating_text=0x7f05001b;
         public static int common_google_play_services_updating_title=0x7f05001c;
         public static int common_open_on_phone=0x7f05001d;
-        public static int common_signin_button_text=0x7f05001e;
-        public static int common_signin_button_text_long=0x7f05001f;
+        public static int common_signin_button_text=0x7f050020;
+        public static int common_signin_button_text_long=0x7f050021;
     }
     public static final class style {
         public static int Bubble_TextAppearance_Dark=0x7f090000;
@@ -367,6 +375,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MapAttrs_ambientEnabled com.google.maps.android:ambientEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_cameraBearing com.google.maps.android:cameraBearing}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_cameraTargetLat com.google.maps.android:cameraTargetLat}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_cameraTargetLng com.google.maps.android:cameraTargetLng}</code></td><td></td></tr>
@@ -384,6 +393,7 @@ containing a value of this type.
            <tr><td><code>{@link #MapAttrs_useViewLifecycle com.google.maps.android:useViewLifecycle}</code></td><td></td></tr>
            <tr><td><code>{@link #MapAttrs_zOrderOnTop com.google.maps.android:zOrderOnTop}</code></td><td></td></tr>
            </table>
+           @see #MapAttrs_ambientEnabled
            @see #MapAttrs_cameraBearing
            @see #MapAttrs_cameraTargetLat
            @see #MapAttrs_cameraTargetLng
@@ -405,8 +415,23 @@ containing a value of this type.
             0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
             0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
             0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
-            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012
+            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012,
+            0x7f010013
         };
+        /**
+          <p>This symbol is the offset where the {@link com.google.maps.android.R.attr#ambientEnabled}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.google.maps.android:ambientEnabled
+        */
+        public static int MapAttrs_ambientEnabled = 16;
         /**
           <p>This symbol is the offset where the {@link com.google.maps.android.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.

@@ -1,3 +1,4 @@
+int attr ambientEnabled 0x7f010013
 int attr cameraBearing 0x7f010004
 int attr cameraTargetLat 0x7f010005
 int attr cameraTargetLng 0x7f010006
@@ -89,8 +90,8 @@ int raw nested_multigeometry 0x7f04000e
 int raw unknwown_folder 0x7f04000f
 int raw unsupported 0x7f040010
 int raw visibility_ground_overlay 0x7f040011
-int string auth_google_play_services_client_facebook_display_name 0x7f050020
-int string auth_google_play_services_client_google_display_name 0x7f050021
+int string auth_google_play_services_client_facebook_display_name 0x7f05001e
+int string auth_google_play_services_client_google_display_name 0x7f05001f
 int string common_android_wear_notification_needs_update_text 0x7f050000
 int string common_android_wear_update_text 0x7f050001
 int string common_android_wear_update_title 0x7f050002
@@ -121,8 +122,8 @@ int string common_google_play_services_update_title 0x7f05001a
 int string common_google_play_services_updating_text 0x7f05001b
 int string common_google_play_services_updating_title 0x7f05001c
 int string common_open_on_phone 0x7f05001d
-int string common_signin_button_text 0x7f05001e
-int string common_signin_button_text_long 0x7f05001f
+int string common_signin_button_text 0x7f050020
+int string common_signin_button_text_long 0x7f050021
 int style Bubble_TextAppearance_Dark 0x7f090000
 int style Bubble_TextAppearance_Light 0x7f090001
 int style ClusterIcon_TextAppearance 0x7f090002
@@ -130,7 +131,8 @@ int[] styleable LoadingImageView { 0x7f010000, 0x7f010001, 0x7f010002 }
 int styleable LoadingImageView_circleCrop 2
 int styleable LoadingImageView_imageAspectRatio 1
 int styleable LoadingImageView_imageAspectRatioAdjust 0
-int[] styleable MapAttrs { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012 }
+int[] styleable MapAttrs { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013 }
+int styleable MapAttrs_ambientEnabled 16
 int styleable MapAttrs_cameraBearing 1
 int styleable MapAttrs_cameraTargetLat 2
 int styleable MapAttrs_cameraTargetLng 3

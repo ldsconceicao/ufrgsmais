@@ -153,5 +153,7 @@
     <orderEntry type="library" exported="" name="jna-platform-4.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-wearable-8.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-8.1.0" level="project" />
+    <orderEntry type="module" module-name="volley" exported="" />
+    <orderEntry type="module" module-name="library" exported="" />
   </component>
 </module>
